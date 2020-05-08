@@ -51,42 +51,42 @@ Download the `GoogleService-Info.plist` file. In Xcode right-click on the yellow
 Logs an app event.
 
 ```js
-Plugins.CapacitorFirebaseAnalytics.logEvent({ name: 'event_name',  parameters: { param1: 'value1', param2: 'value2' });
+Plugins.FirebaseAnalyticsPlugin.logEvent({ name: 'event_name',  parameters: { param1: 'value1', param2: 'value2' });
 ```
 
 ### setUserId(_options_: { _userId_: _string_ })
 Sets the user ID property.
 
 ```js
-Plugins.CapacitorFirebaseAnalytics.setUserId({ userId: '11223344' });
+Plugins.FirebaseAnalyticsPlugin.setUserId({ userId: '11223344' });
 ```
 
 ### setUserProperty(_options_: { _name_: _string_, _value_: _string })
 Sets a user property to a given value.
 
 ```js
-Plugins.CapacitorFirebaseAnalytics.setUserProperty({ name: 'name1', value: 'value1' });
+Plugins.FirebaseAnalyticsPlugin.setUserProperty({ name: 'name1', value: 'value1' });
 ```
 
 ### setScreenName(options: { screenName: string, screenClassOverride?: string)
 Sets the current screen name, which specifies the current visual context in your app. This helps identify the areas in your app where users spend their time and how they interact with your app.
 
 ```js
-Plugins.CapacitorFirebaseAnalytics.setScreenName({ screenName: 'screen1', screenClassOverride: 'ScreenClassName'});
+Plugins.FirebaseAnalyticsPlugin.setScreenName({ screenName: 'screen1', screenClassOverride: 'ScreenClassName'});
 ```
 
 ### appInstanceId(): Promise<string>
 The unique ID for this instance of the application.
 
 ```js
-Plugins.CapacitorFirebaseAnalytics.appInstanceId();
+Plugins.FirebaseAnalyticsPlugin.appInstanceId();
 ```
 
 ### resetAnalyticsData()
 Clears all analytics data for this instance from the device and resets the app instance ID.
 
 ```js
-FirebaseAnalytics.resetAnalyticsData();
+Plugins.FirebaseAnalyticsPlugin.resetAnalyticsData();
 ```
 
 ***
