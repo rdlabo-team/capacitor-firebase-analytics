@@ -9,9 +9,32 @@ export class FirebaseAnalyticsPluginWeb extends WebPlugin implements FirebaseAna
     });
   }
 
-  async echo(options: { value: string }): Promise<{value: string}> {
-    console.log('ECHO', options);
-    return options;
+  // @ts-ignore
+  logEvent(options: { name: string, parameters: any[]}) {
+    return Promise.resolve();
+  }
+
+  // @ts-ignore
+  setUserProperty(options: { value: string, name: string}) {
+    return Promise.resolve();
+  }
+
+  // @ts-ignore
+  setUserId(options: { userId: string }) {
+    return Promise.resolve();
+  }
+
+  // @ts-ignore
+  setScreenName(options: { screenName: string, screenClassOverride: string }) {
+    return Promise.resolve();
+  }
+
+  appInstanceId() {
+    return Promise.resolve({ appInstanceId: ''});
+  }
+
+  resetAnalyticsData() {
+    return Promise.resolve();
   }
 }
 
