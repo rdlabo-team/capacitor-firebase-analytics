@@ -31,6 +31,7 @@ public class FirebaseAnalyticsPlugin extends Plugin {
     public void enable(PluginCall call) throws JSONException {
         try {
             firebaseAnalytics.setAnalyticsCollectionEnabled(true);
+            call.success();
         } catch (Exception e) {
             call.reject(e.getLocalizedMessage(), e);
         }
@@ -40,6 +41,7 @@ public class FirebaseAnalyticsPlugin extends Plugin {
     public void disable(PluginCall call) throws JSONException {
         try {
             firebaseAnalytics.setAnalyticsCollectionEnabled(false);
+            call.success();
         } catch (Exception e) {
             call.reject(e.getLocalizedMessage(), e);
         }
