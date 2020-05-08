@@ -63,7 +63,7 @@ Plugins.FirebaseAnalyticsPlugin.disable();
 Logs an app event.
 
 ```js
-Plugins.FirebaseAnalyticsPlugin.logEvent({ name: 'event_name',  parameters: { param1: 'value1', param2: 'value2' });
+Plugins.FirebaseAnalyticsPlugin.logEvent({ name: 'event_name',  parameters: { param1: 'value1', param2: 'value2' }});
 ```
 
 ### setUserId(_options_: { _userId_: _string_ })
