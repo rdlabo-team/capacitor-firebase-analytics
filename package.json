@@ -1,0 +1,50 @@
+{
+  "name": "@rdlabo/capacitor-firebase-analytics",
+  "version": "0.0.1",
+  "description": "Facebook Login plugin for Capacitor",
+  "main": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf ./dist",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Masahiko Sakakibara",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/core": "latest"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.0",
+    "typescript": "^3.2.4",
+    "@capacitor/ios": "latest",
+    "@capacitor/android": "latest"
+  },
+  "files": [
+    "dist/",
+    "ios/",
+    "android/",
+    "RdlaboCapacitorFirebaseAnalytics.podspec"
+  ],
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native"
+  ],
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
+    "android": {
+      "src": "android"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rdlabo-team/capacitor-firebase-analytics.git"
+  },
+  "bugs": {
+    "url": "git@github.com:rdlabo-team/capacitor-firebase-analytics.git/issues"
+  }
+}
