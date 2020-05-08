@@ -88,5 +88,3 @@ Clears all analytics data for this instance from the device and resets the app i
 ```js
 Plugins.FirebaseAnalyticsPlugin.resetAnalyticsData();
 ```
-
-***
