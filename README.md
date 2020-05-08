@@ -35,7 +35,7 @@ And in file `android/app/src/main/java/**/**/MainActivity.java`, add the plugin 
 ```diff
   this.init(savedInstanceState, new ArrayList<Class<? extends Plugin>>() {{
     [...]
-+   add(jp.rdlabo.capacitor.plugin.firebaseAnalytics.AnalyticsPlugin.class);
++   add(jp.rdlabo.capacitor.plugin.firebase.analytics.FirebaseAnalyticsPlugin.class);
     [...]
   }});
 ```
