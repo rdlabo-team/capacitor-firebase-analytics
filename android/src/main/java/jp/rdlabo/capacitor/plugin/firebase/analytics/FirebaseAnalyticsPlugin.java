@@ -28,6 +28,24 @@ public class FirebaseAnalyticsPlugin extends Plugin {
     }
 
     @PluginMethod()
+    public void enable(PluginCall call) throws JSONException {
+        try {
+            firebaseAnalytics.setAnalyticsCollectionEnabled(true);
+        } catch (Exception e) {
+            call.reject(e.getLocalizedMessage(), e);
+        }
+    }
+
+    @PluginMethod()
+    public void disable(PluginCall call) throws JSONException {
+        try {
+            firebaseAnalytics.setAnalyticsCollectionEnabled(false);
+        } catch (Exception e) {
+            call.reject(e.getLocalizedMessage(), e);
+        }
+    }
+
+    @PluginMethod()
     public void setUserProperty(PluginCall call) throws JSONException {
         try {
             final String name = call.getString("name");

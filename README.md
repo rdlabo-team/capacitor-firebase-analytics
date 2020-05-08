@@ -46,6 +46,18 @@ Download the `GoogleService-Info.plist` file. In Xcode right-click on the yellow
 *tip: If you drag and drop your file to this location, You need set `Target Membership` on Xcode.*
 
 ## Methods
+### enable()
+
+```js
+Plugins.FirebaseAnalyticsPlugin.enable();
+```
+
+### disable()
+
+```js
+Plugins.FirebaseAnalyticsPlugin.disable();
+```
+
 
 ### logEvent(_options_: { _name_: _string_, _parameters_?: _object_ })
 Logs an app event.

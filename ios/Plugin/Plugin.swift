@@ -20,6 +20,20 @@ public class FirebaseAnalyticsPlugin: CAPPlugin {
         }
     }
 
+	  @objc func enable(_ call: CAPPluginCall) {
+	    DispatchQueue.main.async {
+	      Analytics.setAnalyticsCollectionEnabled(true)
+	      call.success()
+	    }
+	  }
+
+	  @objc func disable(_ call: CAPPluginCall) {
+	    DispatchQueue.main.async {
+	      Analytics.setAnalyticsCollectionEnabled(false)
+	      call.success()
+	    }
+	  }
+
     @objc func setScreenName(_ call: CAPPluginCall) {
         let screenName = call.getString("screenName");
         let screenClassOverride = call.getString("screenClassOverride");
