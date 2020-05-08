@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">angular</string>
+    <string name="title_activity_main">angular</string>
+    <string name="package_name">jp.rdlabo.capacitor.firebaseAnalytics</string>
+    <string name="custom_url_scheme">jp.rdlabo.capacitor.firebaseAnalytics</string>
+</resources>

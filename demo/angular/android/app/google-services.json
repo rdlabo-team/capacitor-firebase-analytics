@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "308704876023",
+    "firebase_url": "https://capacitor-firebase-analytics.firebaseio.com",
+    "project_id": "capacitor-firebase-analytics",
+    "storage_bucket": "capacitor-firebase-analytics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308704876023:android:eeac0ad2b8fe8086d54af2",
+        "android_client_info": {
+          "package_name": "jp.rdlabo.capacitor.firebaseAnalytics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308704876023-v8mek2rli4j377qj43jls3q96jhkh660.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoisrTMqxzqncu_9a0nd79eDyNxMzUOo4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308704876023-v8mek2rli4j377qj43jls3q96jhkh660.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "308704876023-utl94h7e01td3qu948oq73d602u756hn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.rdlabo.capacitor.firebase-analytics"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
