@@ -45,6 +45,26 @@ Download the `GoogleService-Info.plist` file. In Xcode right-click on the yellow
 
 *tip: If you drag and drop your file to this location, You need set `Target Membership` on Xcode.*
 
+And in file `App/App/AppDelegate.swift`, add the plugin to the initialization:
+
+```diff
+  import UIKit
+  import Capacitor
++ import Firebase
+
+  @UIApplicationMain
+  class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+      // Override point for customization after application launch.
++     FirebaseApp.configure()
+      return true
+    }
+```
+
 ## Methods
 ### enable()
 
