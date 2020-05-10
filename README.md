@@ -1,7 +1,8 @@
 [![npm version](https://badge.fury.io/js/%40rdlabo%2Fcapacitor-firebase-analytics.svg)](https://badge.fury.io/js/%40rdlabo%2Fcapacitor-firebase-analytics)
 
 # capacitor-firebase-analytics
-This is Firebase Analytics plugin for Capacitor. This repository fork from [philmerrell/capacitor-firebase-analytics](https://github.com/philmerrell/capacitor-firebase-analytics) .
+This is Firebase Analytics plugin for Capacitor.
+This repository fork from [philmerrell/capacitor-firebase-analytics](https://github.com/philmerrell/capacitor-firebase-analytics) .
 
 ## Demo
 [Demo code is here.](https://github.com/rdlabo-team/capacitor-firebase-analytics/tree/master/demo/angular)
