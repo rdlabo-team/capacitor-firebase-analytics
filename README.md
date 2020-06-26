@@ -1,4 +1,4 @@
-# This development is finished. We reccomend https://github.com/capacitor-community/firebase-analytics
+# This development is closed. We reccomend https://github.com/capacitor-community/firebase-analytics
 
 
 # capacitor-firebase-analytics
